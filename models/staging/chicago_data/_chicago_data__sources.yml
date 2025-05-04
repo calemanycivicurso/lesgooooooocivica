@@ -1,0 +1,239 @@
+version: 2
+
+sources:
+  - name: chicago_data
+    description: ""
+    database: alumno32_dev_bronze_db
+    tables:
+      - name: _dlt_loads
+        description: ""
+        columns:
+          - name: load_id
+            data_type: varchar
+            description: ""
+          - name: schema_name
+            data_type: varchar
+            description: ""
+          - name: status
+            data_type: number
+            description: ""
+          - name: inserted_at
+            data_type: timestamp_tz
+            description: ""
+          - name: schema_version_hash
+            data_type: varchar
+            description: ""
+
+      - name: _dlt_pipeline_state
+        description: ""
+        columns:
+          - name: version
+            data_type: number
+            description: ""
+          - name: engine_version
+            data_type: number
+            description: ""
+          - name: pipeline_name
+            data_type: varchar
+            description: ""
+          - name: state
+            data_type: varchar
+            description: ""
+          - name: created_at
+            data_type: timestamp_tz
+            description: ""
+          - name: version_hash
+            data_type: varchar
+            description: ""
+          - name: _dlt_load_id
+            data_type: varchar
+            description: ""
+          - name: _dlt_id
+            data_type: varchar
+            description: ""
+
+      - name: _dlt_version
+        description: ""
+        columns:
+          - name: version
+            data_type: number
+            description: ""
+          - name: engine_version
+            data_type: number
+            description: ""
+          - name: inserted_at
+            data_type: timestamp_tz
+            description: ""
+          - name: schema_name
+            data_type: varchar
+            description: ""
+          - name: version_hash
+            data_type: varchar
+            description: ""
+          - name: schema
+            data_type: varchar
+            description: ""
+
+      - name: crimes
+        description: ""
+        columns:
+          - name: id
+            data_type: varchar
+            description: ""
+          - name: case_number
+            data_type: varchar
+            description: ""
+          - name: date
+            data_type: timestamp_tz
+            description: ""
+          - name: block
+            data_type: varchar
+            description: ""
+          - name: iucr
+            data_type: varchar
+            description: ""
+          - name: primary_type
+            data_type: varchar
+            description: ""
+          - name: description
+            data_type: varchar
+            description: ""
+          - name: location_description
+            data_type: varchar
+            description: ""
+          - name: arrest
+            data_type: boolean
+            description: ""
+          - name: domestic
+            data_type: boolean
+            description: ""
+          - name: beat
+            data_type: varchar
+            description: ""
+          - name: district
+            data_type: varchar
+            description: ""
+          - name: ward
+            data_type: varchar
+            description: ""
+          - name: community_area
+            data_type: varchar
+            description: ""
+          - name: fbi_code
+            data_type: varchar
+            description: ""
+          - name: x_coordinate
+            data_type: varchar
+            description: ""
+          - name: y_coordinate
+            data_type: varchar
+            description: ""
+          - name: year
+            data_type: varchar
+            description: ""
+          - name: updated_on
+            data_type: timestamp_tz
+            description: ""
+          - name: latitude
+            data_type: varchar
+            description: ""
+          - name: longitude
+            data_type: varchar
+            description: ""
+          - name: location__latitude
+            data_type: varchar
+            description: ""
+          - name: location__longitude
+            data_type: varchar
+            description: ""
+          - name: location__human_address
+            data_type: varchar
+            description: ""
+          - name: _dlt_load_id
+            data_type: varchar
+            description: ""
+          - name: _dlt_id
+            data_type: varchar
+            description: ""
+
+      - name: crimes_example
+        description: ""
+        columns:
+          - name: id
+            data_type: varchar
+            description: ""
+          - name: case_number
+            data_type: varchar
+            description: ""
+          - name: date
+            data_type: timestamp_tz
+            description: ""
+          - name: block
+            data_type: varchar
+            description: ""
+          - name: iucr
+            data_type: varchar
+            description: ""
+          - name: primary_type
+            data_type: varchar
+            description: ""
+          - name: description
+            data_type: varchar
+            description: ""
+          - name: location_description
+            data_type: varchar
+            description: ""
+          - name: arrest
+            data_type: boolean
+            description: ""
+          - name: domestic
+            data_type: boolean
+            description: ""
+          - name: beat
+            data_type: varchar
+            description: ""
+          - name: district
+            data_type: varchar
+            description: ""
+          - name: ward
+            data_type: varchar
+            description: ""
+          - name: community_area
+            data_type: varchar
+            description: ""
+          - name: fbi_code
+            data_type: varchar
+            description: ""
+          - name: x_coordinate
+            data_type: varchar
+            description: ""
+          - name: y_coordinate
+            data_type: varchar
+            description: ""
+          - name: year
+            data_type: varchar
+            description: ""
+          - name: updated_on
+            data_type: timestamp_tz
+            description: ""
+          - name: latitude
+            data_type: varchar
+            description: ""
+          - name: longitude
+            data_type: varchar
+            description: ""
+          - name: location__latitude
+            data_type: varchar
+            description: ""
+          - name: location__longitude
+            data_type: varchar
+            description: ""
+          - name: location__human_address
+            data_type: varchar
+            description: ""
+          - name: _dlt_load_id
+            data_type: varchar
+            description: ""
+          - name: _dlt_id
+            data_type: varchar
+            description: ""

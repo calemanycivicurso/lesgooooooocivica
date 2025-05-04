@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: budget
+    latest_version: 1
+    config:
+      materialized: table
+    description: >
+      Info about budget
+    versions:
+      - v: 2
+        config:
+          materialized: table
+          #contract:
+          #  enforced: true
+      - v: 1
+        config:
+          materialized: table
+    columns:
+      - name: product_id
+        data_type: varchar
+      - name: quantity
+        data_type: int
+      - name: month
+        data_type: date
+      - name: date_load
+        data_type: TIMESTAMP_TZ
